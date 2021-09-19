@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>je_naam_Strings</title>
+</head>
+<body>
+    <script type="Text/javascript">
+
+     let voornaam ="Java" ; 
+     let achternaam = "Script" ;
+
+     let naam_Variabele = voornaam +""+achternaam ;
+
+     let lengte = naam_Variabele.length ;
+     console.log(lengte) ;
+
+     let filename = "javaScriptFrameWork" ;
+
+     filename_klein = filename.toLowerCase() ;
+
+     let lengte_filename = filename.length ;
+     console.log(lengte_filename) ;
+
+     let substring_deel1 = filename_klein.substring(0,10) ;
+
+     let substring_deel2 = filename_klein.substring(10,lengte_filename) ;
+    
+     let karakter_5 = filename_klein.charAt(5) ;
+     console.log(karakter_5) ;
+
+     let email = 'jan.klaassen@gmail.com' ;
+
+     let index =email.indexOf('@') ;
+     console.log(index) ;
+     
+     let naamEmail = email.substring(0,index) ;
+     console.log(naamEmail) ;
+
+     let tekst ="Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()." ;
+
+     let tekst_substring1= tekst.substring(0,8) ;
+     console.log(tekst_substring1) ;
+     
+     document.write(`<p> Hallo ${naam_Variabele} . </p>`)  ; 
+
+     document.write(`<p> Jouw naam bevat ${lengte} karakters.</p>`) ;
+    
+     document.write(`<p> De originele filename is '${filename}' </p>`) ;
+
+     document.write(`<p> De filename kan beter in kleine letters getypt worden, dus: '${filename_klein}'</p>`) ;
+
+     document.write(`<p> Als je ${filename_klein} opsplitst, krijg je '${substring_deel1}' en '${substring_deel2}'.</p>`) ;
+
+     document.write(`<p> Het zesde karakter (volgens mensen) in ${filename_klein} is:'${karakter_5}' </p>`) ;
+
+     document.write(`<p> In ${email} staat de @ op positie : ${index} .</p>`) ;
+
+     document.write(`<p> De naam is dus : '${naamEmail}' </p>`) ;
+
+     document.write(`<p> De originele tekst: '${tekst}' wordt dan '${tekst_substring1}' </p>`) ;
+
+    </script>
+
+    
+</body>
+</html>
